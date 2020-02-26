@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #3b3b98;
+	color: white;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 10px;
+}
+
+h2 {
+	text-align: center;
+	margin: 10px 0 20px;
+}
+
+input[type="checkbox"] {
+	margin-right: 0;
+}
+input[type="number"] {
+	width: 35px;
+}
+.container {
+	background-color: #23235b;
+	box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+	padding: 20px;
+	width: 350px;
+	max-width: 100%;
+}
+
+.result-container {
+	font-size: 18px;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	letter-spacing: 1px;
+	padding: 12px 10px;
+	height: 50px;
+	width: 100%;
+}
+
+.result-container #result {
+	word-wrap: break-word;
+	max-width: calc(100% - 40px);
+}
+
+.result-container .btn {
+	font-size: 20px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	height: 40px;
+	width: 40px;
+}
+
+.btn {
+	border: none;
+	color: white;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 8px 12px;
+	background-color: #3b3b98;
+}
+.btn-large {
+	display: block;
+	width: 100%;
+}
+.setting {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px 0;
+}
+@media screen and (max-width: 400px) {
+	.result-container {
+		font-size: 14px;
+	}
+}
